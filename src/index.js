@@ -59,4 +59,3 @@ clear.addEventListener('click', () => {
   localStorage.setItem('tasks', JSON.stringify(listName));
   displayTask();
 });
-
