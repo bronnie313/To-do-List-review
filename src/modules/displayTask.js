@@ -15,6 +15,7 @@ const makeTaskEditable = () => {
         e.preventDefault();
         listName[index].text = taskArea.innerText;
         localStorage.setItem('tasks', JSON.stringify(listName));
+        location.reload();
         taskArea.blur();
       }
     });

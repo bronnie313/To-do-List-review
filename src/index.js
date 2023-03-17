@@ -1,5 +1,6 @@
 import './style.css';
 import displayTask from './modules/displayTask.js';
+import addTask from './modules/add';
 
 const form = document.getElementById('form');
 const task = document.getElementById('task');
@@ -12,15 +13,15 @@ const initList = () => {
 };
 
 // adding task
-const addTask = (task) => {
-  const data = {
-    completed: false,
-    text: task,
-    index: listName.length + 1,
-  };
-  listName.push(data);
-  localStorage.setItem('tasks', JSON.stringify(listName));
-};
+// const addTask = (task) => {
+//   const data = {
+//     completed: false,
+//     text: task,
+//     index: listName.length + 1,
+//   };
+//   listName.push(data);
+//   localStorage.setItem('tasks', JSON.stringify(listName));
+// };
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
