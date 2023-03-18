@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/bronnie313/To-do-list#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.21.2",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
     "eslint": "^7.32.0",

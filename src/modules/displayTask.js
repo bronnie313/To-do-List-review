@@ -1,5 +1,6 @@
 const task = document.getElementById('task');
 const items = document.getElementById('items');
+const currentUrl = window.location.href;
 
 // make task editable
 const makeTaskEditable = () => {
@@ -15,7 +16,7 @@ const makeTaskEditable = () => {
         e.preventDefault();
         listName[index].text = taskArea.innerText;
         localStorage.setItem('tasks', JSON.stringify(listName));
-        location.reload();
+        currentUrl.reload();
         taskArea.blur();
       }
     });
